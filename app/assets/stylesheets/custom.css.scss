@@ -1,0 +1,37 @@
+@import "materialize/components/color-variables";
+$primary-color: color("green", "darken-2") !default;
+$secondary-color: color("blue", "base") !default;
+@import "materialize";
+
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: darkgrey;
+  }
+
+main {
+    flex: 1 0 auto;
+  }
+  
+.links{
+  margin-left: 5px;
+}
+
+.about{
+  margin-left: 6px;
+}
+
+.card {
+  background-color: lightgrey;
+}
+
+.card-action{
+  text-color: white;
+	font-size: 20px;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+  
+}

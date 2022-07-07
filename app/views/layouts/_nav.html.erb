@@ -1,0 +1,27 @@
+<nav>
+  <div class="container">
+    <div class="nav-wrapper">
+      <%= link_to 'University-app', root_path, class: "brand-logo right" %>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'About', pages_about_path %></li>
+        <li><%= link_to 'New course', courses_new_path %></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<ul class="sidenav" id="mobile-demo">
+  <li><%= link_to 'Home', root_path %></li>
+  <li><%= link_to 'About', pages_about_path %></li>
+  <li><%= link_to 'New course', courses_new_path %></li>
+  <li><a class="dropdown-trigger" href="#!" data-target="dropdown">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+</ul>
+<ul id="dropdown" class="dropdown-content">
+  <li><a href="#!">one</a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li><a href="#!">three</a></li>
+</ul>
