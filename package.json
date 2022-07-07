@@ -1,0 +1,7 @@
+{
+  "name": "univ",
+  "private": true,
+  "dependencies": {
+    "yarn": "^1.22.19"
+  }
+}
