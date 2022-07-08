@@ -8,19 +8,21 @@
               <%= @student.name %> 
             </span>
             <p><%= @student.email %></p>
-            <p><%= "Amount of courses: 0" %></p>
             <br>
-          </div>
-            <div class="card-action"> 
-              <% if current_user == @student %>
-              <%= link_to '<i class="material-icons right">create</i> &nbsp; &nbsp; &nbsp; Edit your profile &nbsp;'.html_safe, edit_student_path(@student), class: "waves-effect waves-light btn right blue-grey z-depth-3" %>
-              <br>
+            <p>Course enrollments: 
+            <ul>
+              <% @student.courses.each do |course| %>
+                <li><%= course.name %></li>
               <% end %>
-            </div>
-        </div>
-        
-   
-          
+            </ul></p>
+          </div>
+          <div class="card-action"> 
+            <% if current_user == @student %>
+            <%= link_to '<i class="material-icons right">create</i> &nbsp; &nbsp; &nbsp; Edit your profile &nbsp;'.html_safe, edit_student_path(@student), class: "waves-effect waves-light btn right blue-grey z-depth-3" %>
+            <br>
+            <% end %>
+          </div>
+        </div>  <!-- card -->
       </div>
     </div>
 

@@ -7,8 +7,7 @@
         <li><%= link_to 'Home', root_path %></li>
         <li><%= link_to 'About', pages_about_path %></li>
         <li><%= link_to 'New course', courses_new_path %></li>
-        <li><%= link_to "Students", students_path %></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown">Students<i class="material-icons right">arrow_drop_down</i></a></li>
         <% if (logged_in?) %>
           <li><%= link_to 'Log out', logout_path, method: :delete %></li>
         <% else %>
@@ -22,8 +21,7 @@
   <li><%= link_to 'Home', root_path %></li>
   <li><%= link_to 'About', pages_about_path %></li>
   <li><%= link_to 'New course', courses_new_path %></li>
-  <li><%= link_to "Students", students_path %></li>
-  <li><a class="dropdown-trigger" href="#!" data-target="dropdown">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+  <li><a class="dropdown-trigger" href="#!" data-target="dropdown">Students<i class="material-icons right">arrow_drop_down</i></a></li>
   <% if (logged_in?) %>
     <li><%= link_to 'Log out', logout_path, method: :delete %></li>
   <% else %>
@@ -31,7 +29,7 @@
   <% end %>
 </ul>
 <ul id="dropdown" class="dropdown-content">
-  <li><a href="#!">one</a></li>
+  <li><%= link_to "Students", students_path %></li>
   <li><a href="#!">two</a></li>
   <li class="divider"></li>
   <li><a href="#!">three</a></li>

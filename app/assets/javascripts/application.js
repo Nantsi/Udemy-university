@@ -16,8 +16,11 @@
 //= require_tree .
 
 $(document).ready(function(){
-  $('.sidenav').sidenav();
   $(".dropdown-trigger").dropdown();
+});
+
+$(document).ready(function(){
+  $('.sidenav').sidenav();
   $("#fade-out1").fadeOut(3000);
 });
   

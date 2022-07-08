@@ -22,7 +22,9 @@
           <div class="card sticky-action">
             <div class="card-action"> 
               <p>
-                <a href="#" class="deep-orange-text">Enroll</a>
+                <% if logged_in? && !(current_user.courses.include?(course)) %>
+                  <%= link_to "Enroll", course_enroll_path(course_id: course.id), method: :post, class: "deep-orange-text" %>
+                <% end %>
                 <a href="#" class="deep-orange-text">Info</a>
               </p> 
             </div>
