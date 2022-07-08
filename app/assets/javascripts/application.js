@@ -17,6 +17,7 @@
 
 $(document).ready(function(){
   $(".dropdown-trigger").dropdown();
+  $(".dropdown-button").dropdown();
 });
 
 $(document).ready(function(){
