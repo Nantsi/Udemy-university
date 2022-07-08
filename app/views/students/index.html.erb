@@ -1,0 +1,28 @@
+<h1 class="center-align">Available courses</h1>
+
+<div class="row">
+  <% @students.each do |student| %>
+  
+    <div class="col s6">
+      <div class="col s10 offset-l1">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title grey-text text-darken-4">
+              <%= student.name %> 
+            </span>
+            <p><%= student.email %></p>
+          </div>
+            <div class="card-action"> 
+              <p>
+                <a href="#" class="deep-orange-text">View profile</a>
+              </p> 
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+  
+  <% end %>
+  
+</div> <!-- row -->
