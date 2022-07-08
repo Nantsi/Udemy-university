@@ -17,8 +17,7 @@
 
 $(document).ready(function(){
   $('.sidenav').sidenav();
+  $(".dropdown-trigger").dropdown();
+  $("#fade-out1").fadeOut(3000);
 });
   
-$(document).ready(function(){
-  $(".dropdown-trigger").dropdown();
-});

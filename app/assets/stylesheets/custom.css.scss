@@ -20,6 +20,11 @@ main {
   margin-left: 5px;
 }
 
+.page-head{
+	padding-top: 4vh;	
+}
+
+
 .about{
   margin-left: 6px;
 }
@@ -38,7 +43,13 @@ main {
 }
 
 .card-panel{
-	margin-top: 10vh;
+	margin-top: 4vh;	
+	margin-bottom: -4vh;
+}
+
+.panel{
+	margin-top: 8vh;
+	margin-bottom: 8vh;
 }
 
 .center-align{
