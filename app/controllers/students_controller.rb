@@ -1,4 +1,8 @@
 class StudentsController < ApplicationController
+  
+  skip_before_action :require_user, only: [:new, :create]
+  before_action :own_info, only: [:edit, :update]
+  
   def index
     @students = Student.all
   end
@@ -40,4 +44,12 @@ class StudentsController < ApplicationController
   def student_params
     params.require(:student).permit(:name, :email, :password, :password_confirmation)
   end
+  
+  def own_info
+    @student = Student.find(params[:id])
+    if current_user != @student
+      redirect_to root_path
+    end
+  end
+  
 end

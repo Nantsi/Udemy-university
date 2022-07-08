@@ -1,4 +1,4 @@
-<h1 class="center-align">Available courses</h1>
+<h1 class="center-align">All students</h1>
 
 <div class="row">
   <% @students.each do |student| %>
@@ -14,7 +14,7 @@
           </div>
             <div class="card-action"> 
               <p>
-                <a href="#" class="deep-orange-text">View profile</a>
+                <%= link_to "View profile", student_path(student) %>
               </p> 
             </div>
           </div>
