@@ -29,8 +29,16 @@
                                 <%= f.text_field :email,  placeholder: "Enter your email", autofocus: true %>
                                 <%= f.label :email, class: "black-text" %>
                             </div>
+                            <div class="input-field col s12 z-depth-1">
+                                <%= f.password_field :password,  placeholder: "Enter a password", autofocus: true %>
+                                <%= f.label :password, class: "black-text" %>
+                            </div>
+                            <div class="input-field col s12 z-depth-1">
+                                <%= f.password_field :password_confirmation,  placeholder: "Confirm password", autofocus: true %>
+                                <%= f.label :password_confirmation, class: "black-text" %>
+                            </div>
                             
-                            <%= f.submit "Submit", class: "waves-effect waves-light btn right blue-grey z-depth-3" %>
+                            <%= f.button '<i class="material-icons right">arrow_forward</i> Submit'.html_safe, class: "waves-effect waves-light btn right blue-grey z-depth-3" %>
                             
                         <% end %>
                     </div>
